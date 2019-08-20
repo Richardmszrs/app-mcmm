@@ -1,3 +1,4 @@
+import FirebaseContext from './context';
 import app from 'firebase/app';
 
 const config = {
@@ -17,3 +18,4 @@ class Firebase {
 }
 
 export default Firebase;
+export { FirebaseContext };
