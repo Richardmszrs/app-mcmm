@@ -2,14 +2,13 @@ import React from 'react';
 import SignOutButton from '../SignOut';
 import { withAuthorization } from '../Session';
 
-const Home = () => (
+const Transactions = () => (
   <div className='gloabl-wrapper'>
-    <h1>Home</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
-    <SignOutButton />
+    <h1>Transactions</h1>
+    
   </div>
 );
 
 const condition = authUser => !!authUser;
 
-export default withAuthorization(condition)(Home);
+export default withAuthorization(condition)(Transactions);
